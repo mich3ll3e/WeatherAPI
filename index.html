@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather API</title>
+</head>
+<body>
+    <div class="bg-dark">
+        <h1 class="text-center mb-2 p-2 text-light">Weather Dashboard</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <form>
+                    <div class="input-group m-2 pr-3">
+                        <input type="text" class="form-control" id="citySearchInput" placeholder="Search for a City">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit" id="citySearchButton"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <div class="w-100">
+                    <ul class="list-group cityList mx-2 mt-3"></ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card shadow m-2">
+                    <div class="card-body cityToday"></div>
+                </div>
+                <div class="m-2">
+                    <h3>5-Day Forecast:</h3>
+                    <div class="forecast row text-light">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/aac29251f9.js" crossorigin="anonymous"></script>
+      <script src="weather.js"></script>
+</body>
+
+</html>
